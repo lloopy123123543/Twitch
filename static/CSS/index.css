@@ -13,6 +13,23 @@ body{
     min-height: 100vh;
     background: linear-gradient(125deg,#3e27ed,#fb5000);
 }
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 .card{
     position: relative;
     width: 350px;
@@ -131,21 +148,4 @@ body{
 }
 .click{
     animation: animate 2s infinite linear;
-}
-@keyframes animate{
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(25deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
-    75%{
-        transform: rotate(-25deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
 }
