@@ -107,22 +107,45 @@ body{
     justify-content: space-evenly;
     gap: 20px;
 }
-.card .info .actionBtn button{
-    background-color: white;
-    
+.buttonis{
     display: flex;
     justify-content: center;
-    width: 40px;
-    height: 35px;
+    width: 48px;
+    height: 48px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: 2.0s;
+    cursor: pointer; 
     opacity: 0;
-    transition: 2s;
 }
-.card:hover .info .actionBtn button{
+
+.buttonis:hover{
+    animation: animate 0.4s infinite linear;
+}
+.card:hover .info .actionBtn .buttonis{
     opacity: 1;
 }
 .click{
     cursor: pointer;
+}
+.click{
+    animation: animate 2s infinite linear;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
